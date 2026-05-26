@@ -64,11 +64,11 @@ Used to create and manage files.
 Examples:
 
 ```bash
-touch
-mkdir
-cp
-mv
-rm
+touch - touch <filename>
+mkdir - mkdir <directory_name>
+cp - cp <source> <destination>
+mv - mv <source> <destination>
+rm - rm <filename>
 ```
 
 Explanation:
@@ -95,8 +95,8 @@ Used to control file access.
 Examples:
 
 ```bash
-chmod
-chown
+chmod -chmod <permissions> <filename>
+chown -chown <owner> <filename>
 ```
 
 Explanation:
@@ -121,9 +121,9 @@ Used to create and manage users.
 Examples:
 
 ```bash
-useradd
-userdel
-groupadd
+useradd - useradd <username>
+userdel - userdel <username>
+groupadd - groupadd <groupname> 
 ```
 
 Explanation:
@@ -141,15 +141,15 @@ Used to search and process text.
 Examples:
 
 ```bash
-grep
-awk
-sort
+grep - grep <pattern> <filename>
+awk - awk '{print $column_number}' <filename>
+sort - sort <filename>
 ```
 
 Explanation:
 
 - `grep` → Searches specific text
-- `awk` → Extracts fields
+- `awk` → Process and extract specific data from files
 - `sort` → Sorts content
 
 Example:
@@ -171,7 +171,7 @@ Examples:
 ```bash
 ps
 top
-kill
+kill - kill <process_id>
 ```
 
 Explanation:
@@ -194,6 +194,10 @@ Stops process with ID 1234.
 
 Used to install software packages.
 
+yum install <package_name> -y
+yum remove <package_name> -y
+yum update -y
+ 
 Example:
 
 ```bash
@@ -216,8 +220,8 @@ Used for network-related operations.
 Examples:
 
 ```bash
-ping
-curl
+ping - ping <hostname/IP>
+curl - curl <URL>
 netstat
 ```
 
@@ -236,9 +240,9 @@ Used for compressing files.
 Examples:
 
 ```bash
-zip
-unzip
-tar
+zip →  zip <zip_file_name> <file_name>
+unzip →  unzip <zip_file_name>
+tar → -cvf <archive_name.tar> <folder_name>
 ```
 
 Explanation:
